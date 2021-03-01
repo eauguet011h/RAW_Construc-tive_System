@@ -4,4 +4,3 @@ sources:
   - name: Bigquery
     database: "{{ env_var('PROJECT_ID', 'mvp-011h') }}" 
     schema: dbt_bq_example
-    location: EU
