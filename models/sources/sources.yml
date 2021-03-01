@@ -1,6 +1,8 @@
+  
 version: 2
 
 sources:
   - name: Bigquery
     database: "{{ env_var('PROJECT_ID', 'mvp-011h') }}" 
     schema:  "{{ env_var('DATASET', 'RAW_Constructive_System_TEMP') }}" 
+
