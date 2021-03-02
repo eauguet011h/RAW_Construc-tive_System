@@ -2,7 +2,7 @@
 
 with solution as (
 
-      select * from {{ source('proyect','bom_config_param.') }}
+      select * from {{ source('proyect','bom_config_param') }}
       
 )
 select * from  solution

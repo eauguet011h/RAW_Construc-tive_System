@@ -9,7 +9,7 @@ version: '1.0.0'
 config-version: 2
 vars :
   # La variable `schema_output` será accesible en todos los recursos
-  schema_output : 'LAST' 
+  schema_output : 'TEMP_LAST' 
 
 # This setting configures which "profile" dbt uses for this project.
 profile: 'default'
@@ -39,10 +39,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   bigquery:
-    core:
-      materialized: table 
-      # schema: core # (uncomment if you create table names based on model sub directory.
-      # ex: this will append "_core" to the sql tables in the "core" subdirectory )
     staging:
       materialized: table
       

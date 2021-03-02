@@ -2,7 +2,7 @@
 
 with solution as (
 
-      select * from {{ source('proyect','partial_segment_layer.') }}
+      select * from {{ source('proyect','partial_segment_layer') }}
 
 )
 select * from  solution
