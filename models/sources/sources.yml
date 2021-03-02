@@ -1,7 +1,27 @@
-  
 version: 2
 
 sources:
-  - name: Bigquery
+  - name: proyect
     database: "{{ env_var('PROJECT_ID', 'mvp-011h') }}" 
-    schema: "{{ env_var('PROJECT_ID', 'RAW_Constructive_System_TEMP') }}" 
+    schema: RAW_Constructive_System_TEMP
+  
+        
+
+    tables:
+      - name: bom_material_hierarchy
+      - name: component_classification
+      - name: component_type
+      - name: material_specific
+      - name: 011h_classification
+      - name: bom_config_param
+      - name: bom_partial_segment_layer
+      - name: component_layer
+      - name: material_generic
+      - name: partial_segment
+      - name: partial_segment_layer
+
+      
+
+     
+  
+
