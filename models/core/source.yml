@@ -1,9 +1,0 @@
-version: 2
-
-sources:
-  - name: 011h_classification
-    description: Table classification
-
-  
-
-    
